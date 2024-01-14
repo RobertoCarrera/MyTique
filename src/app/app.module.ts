@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './utils/navbar/navbar.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { OutcomesComponent } from './components/outcomes/outcomes.component';
+import { IncomesComponent } from './components/incomes/incomes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SummaryComponent,
-    OutcomesComponent
+    OutcomesComponent,
+    IncomesComponent
   ],
   imports: [
     BrowserModule,
