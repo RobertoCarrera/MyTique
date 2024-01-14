@@ -9,6 +9,7 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { OutcomesComponent } from './components/outcomes/outcomes.component';
 import { IncomesComponent } from './components/incomes/incomes.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     SummaryComponent,
     OutcomesComponent,
     IncomesComponent,
-    ProfileComponent
+    ProfileComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
