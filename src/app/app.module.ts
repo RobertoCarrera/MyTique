@@ -10,6 +10,7 @@ import { OutcomesComponent } from './components/outcomes/outcomes.component';
 import { IncomesComponent } from './components/incomes/incomes.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PillComponent } from './components/pill/pill.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './components/header/header.component';
     OutcomesComponent,
     IncomesComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    PillComponent
   ],
   imports: [
     BrowserModule,
