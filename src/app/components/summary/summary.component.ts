@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SummaryComponent {
 
+  total_title: string = 'Total';
+  month_title: string = 'Enero';
+  categories_title: string = 'Categorías';
 }
