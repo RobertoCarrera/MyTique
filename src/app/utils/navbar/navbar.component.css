@@ -1,0 +1,60 @@
+.menu{
+
+    height: 5em;
+
+    position: fixed;
+    bottom: 0%;
+
+    background-color: #F3EDF7;
+}
+
+.menu_list{
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+}
+
+.menu_anchor{
+
+    text-decoration: none;
+}
+
+.menu_title{
+
+    color: #292D32;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.menu_icon{
+
+    font-size: 1.5em;
+}
+
+.menu_list:nth-child(1) .menu_icon{
+
+    color: #579AFF;
+}
+
+.menu_list:nth-child(2) .menu_icon{
+
+    color: red;
+
+    transform: rotateY(180deg);
+}
+
+.menu_list:nth-child(3) .menu_icon{
+
+    color: green;
+}
+
+.menu_list:nth-child(4) .menu_icon{
+
+    color: #49454F;
+}
