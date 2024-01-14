@@ -1,1 +1,15 @@
-<p>outcomes works!</p>
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-10 pt-3">
+            <app-pill [title1] = "title_variable" [quantity1] = "outcomes_variables" [title2] = "title_fixed" [quantity2] = "outcomes_fixed"></app-pill>
+        </div>
+        <div class="col-12">
+            <app-header [title] = "header_fixed" ></app-header>
+        </div>
+        <div class="col-12 pt-1 fix_outcomes d-flex flex-column align-items-center justify-content-start">
+            <div *ngFor="let fixed of fix_outcomes" class="col-10 mb-3">
+                <app-outcome-card [fixed_outcome] = "fixed"></app-outcome-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -10,9 +10,7 @@ export class IncomesService {
 
   categories: Category[] = [];
 
-  constructor(private categoriesService:CategoriesService) { }
-
-  ngOnInit(){
+  constructor(private categoriesService:CategoriesService) { 
 
     this.categories = this.categoriesService.getAllCategories();
   }

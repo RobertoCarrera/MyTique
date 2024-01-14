@@ -11,6 +11,7 @@ import { IncomesComponent } from './components/incomes/incomes.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PillComponent } from './components/pill/pill.component';
+import { OutcomeCardComponent } from './components/outcome-card/outcome-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PillComponent } from './components/pill/pill.component';
     IncomesComponent,
     ProfileComponent,
     HeaderComponent,
-    PillComponent
+    PillComponent,
+    OutcomeCardComponent
   ],
   imports: [
     BrowserModule,
