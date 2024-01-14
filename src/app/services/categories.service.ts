@@ -9,23 +9,27 @@ export class CategoriesService{
   categories: Category[] = [
     {
       name: 'Alquiler',
-      icon: './../../../assets/icons/restaurant.png'
+      icon: './../../../assets/icons/rent.png'
     },
     {
       name: 'Préstamos',
-      icon: './../../../assets/icons/gas.png'
+      icon: './../../../assets/icons/loan.png'
     },
     {
       name: 'Comida',
-      icon: './../../../assets/icons/book.png'
+      icon: './../../../assets/icons/food.png'
     },
     {
       name: 'Electricidad',
-      icon: './../../../assets/icons/plane.png'
+      icon: './../../../assets/icons/electricity.png'
     },
     {
       name: ' Agua',
-      icon: './../../../assets/icons/videogames.png'
+      icon: './../../../assets/icons/water.png'
+    },
+    {
+      name: ' Restaurante',
+      icon: './../../../assets/icons/restaurant.png'
     }
   ];
 

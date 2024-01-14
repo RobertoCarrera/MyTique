@@ -40,3 +40,17 @@
     background-color: red;
     color: black;
 }
+
+.variable_quantity{
+
+    font-size: 5vw;
+    color: white;
+}
+
+.variable_bg{
+
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+}

@@ -46,47 +46,47 @@ export class OutcomesService{
 
     this.variables = [
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 25,
         date: new Date(2023, 11, 30)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 33,
         date: new Date(2024, 0, 4)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 22,
         date: new Date(2024, 0, 8)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 23,
         date: new Date(2024, 0, 7)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 15,
         date: new Date(2024, 0, 5)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 12,
         date: new Date(2024, 0, 5)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 11,
         date: new Date(2024, 0, 2)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 19,
         date: new Date(2024, 0, 2)
       },
       {
-        category: this.categories[0],
+        category: this.categories[5],
         quantity: 21,
         date: new Date(2024, 0, 2)
       }
