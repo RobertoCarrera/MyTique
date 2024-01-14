@@ -267,7 +267,19 @@
     font-style: italic;
 }
 
+.center_it{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text_bk{
 
     color: #292D32;    
+}
+
+.quantity{
+
+    font-size: 7vw;
 }

@@ -7,7 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SummaryComponent {
 
-  total_title: string = 'Total';
-  month_title: string = 'Enero';
-  categories_title: string = 'Categorías';
+  title_total: string = 'Total';
+  title_incomes: string = 'Ahorros';
+  title_outcomes: string = 'Gastos';
+  total_incomes: number = 395;
+  total_outcomes: number = 678;
+  title_month: string = 'Enero';
+  month_incomes: number = 102;
+  month_outcomes: number = 917;
+  title_categories: string = 'Categorías';
 }
