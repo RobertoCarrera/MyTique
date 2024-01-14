@@ -15,11 +15,14 @@ export class OutcomesComponent implements OnInit{
   outcomes_fixed: number = 678;
   header_fixed: string = 'Fijos';
   fix_outcomes: Outcome[] = [];
+  header_variables: string = 'Variables';
+  variable_outcomes: Outcome[] = [];
   
   constructor(private outcomesService: OutcomesService){}
 
   ngOnInit(){
 
     this.fix_outcomes = this.outcomesService.getAllFixedOutcomes();
+    this.variable_outcomes = this.outcomesService.getAllOVariableOutcomes();
   }
 }

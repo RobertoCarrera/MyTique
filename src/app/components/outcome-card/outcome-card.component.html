@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="isFixed" class="container">
     <div class="row center_it">
         <div class="col-12 center_it p-0">
             <button class="row outcome p-1 w-100 center_it">
@@ -28,18 +28,19 @@
         </div>
     </div>
 </div>
-<!-- <div class="container">
+
+<div *ngIf="isVariable" class="container">
     <div class="row center_it">
         <div class="col-12 center_it p-0">
             <button class="row outcome p-1 w-100 center_it">
                 <div class="col-2 center_it">
-                    <img src={{outcome.category.icon}} alt="" height="45px">
+                    <img src={{variable_outcome.category.icon}} alt="" height="45px">
                 </div>   
-                <div class="col-8 h-75">
-                    <div class="row h-100">
+                <div class="col-8 h-75 p-0 center_it">
+                    <div class="row h-100 w-100">
                         <div class="col-12 p-0 d-flex align-items-center justify-content-start">
-                            <h3 class="outcome_title m-0">{{outcome.category.name}}</h3>
-                        </div> 
+                            <h3 class="outcome_title m-0">{{variable_outcome.category.name}}</h3>
+                        </div>
                         <div class="col-12 p-0 d-flex align-items-center justify-content-start">
                             <h6 class="m-0">{{dayName}}</h6>
                         </div>
@@ -47,12 +48,12 @@
                 </div>
                 <div class="col-2 center_it">
                     <div class="row">
-                        <div class="col-12 center_it outcome_bg bg-danger">
-                            <h3 class="m-0 outcome_quantity">{{outcome.quantity}}€</h3>
+                        <div class="col-12 center_it">
+                            <h3 class="m-0 outcome_quantity">{{variable_outcome.quantity}}€</h3>
                         </div>
                     </div>
                 </div>
             </button>
         </div>
     </div>
-</div> -->
+</div>

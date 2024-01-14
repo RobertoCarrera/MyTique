@@ -9,20 +9,25 @@ import { Outcome } from 'src/app/models/outcome.model';
 export class OutcomeCardComponent {
   
   @Input() fixed_outcome!: Outcome;
+  @Input() variable_outcome!: Outcome;
+  @Input() isFixed: boolean = false;
+  @Input() isVariable: boolean = false;
+
+
   dayName = '';
 
   ngOnInit(){
 
   }
 
-  // ngOnChanges(){
+  ngOnChanges(){
 
-  //   if(this.outcome){
+    if(this.variable_outcome){
 
-  //     const options: Intl.DateTimeFormatOptions = {weekday: 'long', day: '2-digit', month: 'long'};
-  //     let formattedDate = this.outcome.date!.toLocaleDateString('es-ES', options);
-  //     formattedDate = formattedDate.replace(/(^\w|\s\w)/g, l => l.toUpperCase());
-  //     this.dayName = formattedDate.replace(/\bDe\b/g, 'de');
-  //   }
-  // }
+      const options: Intl.DateTimeFormatOptions = {weekday: 'long', day: '2-digit', month: 'long'};
+      let formattedDate = this.variable_outcome.date!.toLocaleDateString('es-ES', options);
+      formattedDate = formattedDate.replace(/(^\w|\s\w)/g, l => l.toUpperCase());
+      this.dayName = formattedDate.replace(/\bDe\b/g, 'de');
+    }
+  }
 }
