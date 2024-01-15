@@ -8,7 +8,7 @@
         </div>
         <div class="col-12 pt-1 fix_outcomes d-flex flex-column align-items-center justify-content-start">
             <div *ngFor="let fixed of fix_outcomes" class="col-10 mb-3">
-                <app-outcome-card [fixed_outcome] = "fixed" [isFixed] = "true" [isVariable] = "false"></app-outcome-card>
+                <app-movement-card [fixed_outcome] = "fixed" [isFixed] = "true"></app-movement-card>
             </div>
         </div>
         <div class="col-12 text-center">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-12 pt-1 pb-3 variable_outcomes d-flex flex-column align-items-center justify-content-start">
             <div *ngFor="let variable of variable_outcomes | slice:0:3" class="col-10 mb-3">
-                <app-outcome-card [variable_outcome] = "variable" [isVariable] = "true" [isFixed] = "false"></app-outcome-card>
+                <app-movement-card [variable_outcome] = "variable" [isVariable] = "true"></app-movement-card>
             </div>
         </div>
         <div class="col-12 text-center">

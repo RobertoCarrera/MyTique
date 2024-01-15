@@ -1,17 +1,22 @@
 import { Component, Input } from '@angular/core';
+import { Income } from 'src/app/models/income.model';
 import { Outcome } from 'src/app/models/outcome.model';
 
 @Component({
-  selector: 'app-outcome-card',
-  templateUrl: './outcome-card.component.html',
-  styleUrls: ['./outcome-card.component.css']
+  selector: 'app-movement-card',
+  templateUrl: './movement-card.component.html',
+  styleUrls: ['./movement-card.component.css']
 })
-export class OutcomeCardComponent {
+export class MovementCardComponent {
   
   @Input() fixed_outcome!: Outcome;
   @Input() variable_outcome!: Outcome;
   @Input() isFixed: boolean = false;
   @Input() isVariable: boolean = false;
+  @Input() fixed_income!: Income;
+  @Input() variable_income!: Income;
+  @Input() isFixedIncome: boolean = false;
+  @Input() isVariableIncome: boolean = false;
 
 
   dayName = '';

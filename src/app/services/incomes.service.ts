@@ -9,31 +9,44 @@ import { Category } from '../models/category.model';
 export class IncomesService {
 
   categories: Category[] = [];
+  fixed: Income[] = [];
+  variables: Income[] = [];
 
   constructor(private categoriesService:CategoriesService) { 
 
     this.categories = this.categoriesService.getAllCategories();
+
+    this.fixed = [
+      {
+        category: this.categories[0],
+        quantity: 1100
+      },
+      {
+        category: this.categories[6],
+        quantity: 198
+      }
+    ];
+  
+    this.variables = [
+      {
+        category: this.categories[7],
+        quantity: 25
+      },
+      {
+        category: this.categories[8],
+        quantity: 33
+      }
+    ];
   }
 
-  fixed: Income[] = [
-    {
-      category: this.categories[0],
-      quantity: 1100
-    },
-    {
-      category: this.categories[0],
-      quantity: 198
-    }
-  ];
 
-  variables: Income[] = [
-    {
-      category: this.categories[0],
-      quantity: 25
-    },
-    {
-      category: this.categories[0],
-      quantity: 33
-    }
-  ];
+  getAllFixedIncomes(){
+
+    return this.fixed;
+  }
+
+  getAllOVariableIncomes(){
+
+    return this.variables;
+  }
 }

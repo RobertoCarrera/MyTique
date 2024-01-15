@@ -30,6 +30,18 @@ export class CategoriesService{
     {
       name: ' Restaurante',
       icon: './../../../assets/icons/restaurant.png'
+    },
+    {
+      name: ' Extras',
+      icon: './../../../assets/icons/extra.png'
+    },
+    {
+      name: ' Crypto',
+      icon: './../../../assets/icons/crypto.png'
+    },
+    {
+      name: ' Wallapop',
+      icon: './../../../assets/icons/wallapop.png'
     }
   ];
 
