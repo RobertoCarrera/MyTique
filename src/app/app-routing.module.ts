@@ -5,10 +5,15 @@ import { OutcomesComponent } from './components/outcomes/outcomes.component';
 import { IncomesComponent } from './components/incomes/incomes.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
-    path: '',pathMatch: 'full', redirectTo: 'resumen'
+    path: '', pathMatch: 'full', redirectTo: '/login'
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'resumen',
@@ -25,6 +30,10 @@ const routes: Routes = [
   {
     path: 'perfil',
     component: ProfileComponent
+  },
+  {
+    path: '**',
+    component: LoginComponent
   }
 ];
 

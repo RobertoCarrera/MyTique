@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PillComponent } from './components/pill/pill.component';
 import { MovementCardComponent } from './components/movement-card/movement-card.component';
 import { OutcomesComponent } from './components/outcomes/outcomes.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OutcomesComponent } from './components/outcomes/outcomes.component';
     ProfileComponent,
     HeaderComponent,
     PillComponent,
-    MovementCardComponent
+    MovementCardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
