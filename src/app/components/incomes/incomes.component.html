@@ -1,0 +1,29 @@
+<div class="container incomes">
+    <div class="row h-100 d-flex align-items-center justify-content-around">
+        <div class="col-10 pt-3">
+            <app-pill [title1] = "title_month" [quantity1] = "incomes_month" [title2] = "title_total" [quantity2] = "incomes_total"></app-pill>
+        </div>
+        <div class="col-12">
+            <app-header [title] = "title_fix" ></app-header>
+        </div>
+        <div class="col-12 pt-1 fix_incomes d-flex flex-column align-items-center justify-content-center">
+            <div *ngFor="let fixed of fix_incomes" class="col-10 mb-3">
+                <app-movement-card [fixed_income] = "fixed" [isFixedIncome] = "true"></app-movement-card>
+            </div>
+        </div>
+        <!-- <div class="col-12 text-center">
+            <a href="" class="text_bk">ver todos</a>
+        </div> -->
+        <div class="col-12">
+            <app-header [title] = "title_variables" ></app-header>
+        </div>
+        <div class="col-12 pt-1 pb-3 variable_incomes d-flex flex-column align-items-center justify-content-center">
+            <div *ngFor="let variable of variable_incomes" class="col-10 mb-3">
+                <app-movement-card [variable_income] = "variable" [isVariableIncome] = "true"></app-movement-card>
+            </div>
+        </div>
+        <!-- <div class="col-12 text-center">
+            <a href="" class="text_bk">ver todos</a>
+        </div> -->
+    </div>
+</div>

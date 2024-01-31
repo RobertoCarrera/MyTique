@@ -13,6 +13,8 @@ export class IncomesService {
   private api = 'http://localhost:8092/api/v1/incomes';
 
   categories: Category[] = [];
+  fixed: Income[] = [];
+  variables: Income[] = [];
 
 <<<<<<< Updated upstream
   constructor(private categoriesService:CategoriesService) { }
@@ -20,7 +22,6 @@ export class IncomesService {
   ngOnInit(){
 
     this.categories = this.categoriesService.getAllCategories();
-  }
 
   fixed: Income[] = [
     {

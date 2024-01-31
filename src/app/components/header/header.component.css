@@ -1,0 +1,12 @@
+.header_title{
+
+    font-weight: 500;
+    font-size: 5.5vw;
+    letter-spacing: 0.3vw;
+}
+
+.separator{
+
+    border: 1px solid black;
+    opacity: 40%;
+}

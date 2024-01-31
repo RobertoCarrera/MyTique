@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-10 pt-3">
+            <app-pill [title1] = "title_variable" [quantity1] = "outcomes_variables" [title2] = "title_fixed" [quantity2] = "outcomes_fixed"></app-pill>
+        </div>
+        <div class="col-12">
+            <app-header [title] = "header_fixed" ></app-header>
+        </div>
+        <div class="col-12 pt-1 fix_outcomes d-flex flex-column align-items-center justify-content-start">
+            <div *ngFor="let fixed of fix_outcomes" class="col-10 mb-3">
+                <app-movement-card [fixed_outcome] = "fixed" [isFixed] = "true"></app-movement-card>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <a href="" class="text_bk">+info</a>
+        </div>
+        <div class="col-12">
+            <app-header [title] = "header_variables" ></app-header>
+        </div>
+        <div class="col-12 pt-1 pb-3 variable_outcomes d-flex flex-column align-items-center justify-content-start">
+            <div *ngFor="let variable of variable_outcomes | slice:0:3" class="col-10 mb-3">
+                <app-movement-card [variable_outcome] = "variable" [isVariable] = "true"></app-movement-card>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <a href="" class="text_bk">ver todos</a>
+        </div>
+    </div>
+</div>

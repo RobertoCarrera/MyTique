@@ -11,12 +11,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class OutcomesService {
+export class OutcomesService{
 
 <<<<<<< Updated upstream
   constructor(private categoriesService:CategoriesService) { }
 
-  categories = this.categoriesService.getAllCategories();
+    this.categories = this.categoriesService.getAllCategories();
 
   fixed: Outcome[] = [
     {
@@ -61,53 +61,53 @@ export class OutcomesService {
     });
 >>>>>>> Stashed changes
 
-  variables: Outcome[] = [
-    {
-      category: this.categories[0],
-      quantity: 25,
-      date: new Date(2023, 11, 30)
-    },
-    {
-      category: this.categories[0],
-      quantity: 33,
-      date: new Date(2024, 0, 4)
-    },
-    {
-      category: this.categories[0],
-      quantity: 22,
-      date: new Date(2024, 0, 8)
-    },
-    {
-      category: this.categories[0],
-      quantity: 23,
-      date: new Date(2024, 0, 7)
-    },
-    {
-      category: this.categories[0],
-      quantity: 15,
-      date: new Date(2024, 0, 5)
-    },
-    {
-      category: this.categories[0],
-      quantity: 12,
-      date: new Date(2024, 0, 5)
-    },
-    {
-      category: this.categories[0],
-      quantity: 11,
-      date: new Date(2024, 0, 2)
-    },
-    {
-      category: this.categories[0],
-      quantity: 19,
-      date: new Date(2024, 0, 2)
-    },
-    {
-      category: this.categories[0],
-      quantity: 21,
-      date: new Date(2024, 0, 2)
-    }
-  ];
+    this.variables = [
+      {
+        category: this.categories[5],
+        quantity: 25,
+        date: new Date(2023, 11, 30)
+      },
+      {
+        category: this.categories[5],
+        quantity: 33,
+        date: new Date(2024, 0, 4)
+      },
+      {
+        category: this.categories[5],
+        quantity: 22,
+        date: new Date(2024, 0, 8)
+      },
+      {
+        category: this.categories[5],
+        quantity: 23,
+        date: new Date(2024, 0, 7)
+      },
+      {
+        category: this.categories[5],
+        quantity: 15,
+        date: new Date(2024, 0, 5)
+      },
+      {
+        category: this.categories[5],
+        quantity: 12,
+        date: new Date(2024, 0, 5)
+      },
+      {
+        category: this.categories[5],
+        quantity: 11,
+        date: new Date(2024, 0, 2)
+      },
+      {
+        category: this.categories[5],
+        quantity: 19,
+        date: new Date(2024, 0, 2)
+      },
+      {
+        category: this.categories[5],
+        quantity: 21,
+        date: new Date(2024, 0, 2)
+      }
+    ];
 
 <<<<<<< Updated upstream
   getAllFixOutcomes(){
@@ -185,7 +185,7 @@ export class OutcomesService {
     for(let i=0;i<this.fixed.length;i++)
     {
 
-      this.fixed[i].percentage = (this.fixed[i].quantity/this.fixed[i].limit!)*100;
+      this.fixed[i].percentage = Math.round((this.fixed[i].quantity/this.fixed[i].limit!)*100);
     }
   }
 }

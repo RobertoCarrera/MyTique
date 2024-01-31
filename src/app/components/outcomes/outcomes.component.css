@@ -1,0 +1,11 @@
+.fix_outcomes{
+
+    height: 26vh;
+
+    overflow-y: auto;
+}
+
+.variable_outcomes{
+
+    height: 35vh;
+}
