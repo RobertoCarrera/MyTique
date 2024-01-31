@@ -1,51 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Outcome } from '../models/outcome.model';
 import { CategoriesService } from './categories.service';
-<<<<<<< Updated upstream
-=======
 import { Category } from '../models/category.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
->>>>>>> Stashed changes
 
 @Injectable({
   providedIn: 'root'
 })
 export class OutcomesService{
 
-<<<<<<< Updated upstream
-  constructor(private categoriesService:CategoriesService) { }
-
-    this.categories = this.categoriesService.getAllCategories();
-
-  fixed: Outcome[] = [
-    {
-      category: this.categories[0],
-      quantity: 375,
-      limit: 375
-    },
-    {
-      category: this.categories[0],
-      quantity: 375,
-      limit: 288
-    },
-    {
-      category: this.categories[0],
-      quantity: 375,
-      limit: 190
-    },
-    {
-      category: this.categories[0],
-      quantity: 375,
-      limit: 63
-    },
-    {
-      category: this.categories[0],
-      quantity: 375,
-      limit: 28
-    }
-  ];
-=======
   private api = 'http://localhost:8092/api/v1/outcomes';
 
   categories: Category[] = [];  
@@ -59,7 +23,6 @@ export class OutcomesService{
 
       this.categories = result;
     });
->>>>>>> Stashed changes
 
     this.variables = [
       {
@@ -109,9 +72,6 @@ export class OutcomesService{
       }
     ];
 
-<<<<<<< Updated upstream
-  getAllFixOutcomes(){
-=======
     this.variables = [
       {
         category: this.categories[5],
@@ -170,7 +130,6 @@ export class OutcomesService{
   }
 
   getAllFixedOutcomes(){
->>>>>>> Stashed changes
 
     return this.fixed;
   }

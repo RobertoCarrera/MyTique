@@ -24,4 +24,5 @@ export class IncomesComponent {
 
     this.fix_incomes = this.incomesService.getAllFixedIncomes();
     this.variable_incomes = this.incomesService.getAllOVariableIncomes();
-  }}
+  }
+}

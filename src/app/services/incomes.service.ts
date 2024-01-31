@@ -16,24 +16,6 @@ export class IncomesService {
   fixed: Income[] = [];
   variables: Income[] = [];
 
-<<<<<<< Updated upstream
-  constructor(private categoriesService:CategoriesService) { }
-
-  ngOnInit(){
-
-    this.categories = this.categoriesService.getAllCategories();
-
-  fixed: Income[] = [
-    {
-      category: this.categories[0],
-      quantity: 1100
-    },
-    {
-      category: this.categories[0],
-      quantity: 198
-    }
-  ];
-=======
   constructor(private http: HttpClient,
     private categoriesService: CategoriesService) { 
 
@@ -69,17 +51,4 @@ export class IncomesService {
 
     return this.http.get<Income[]>(this.api);
   }
-
->>>>>>> Stashed changes
-
-  variables: Income[] = [
-    {
-      category: this.categories[0],
-      quantity: 25
-    },
-    {
-      category: this.categories[0],
-      quantity: 33
-    }
-  ];
 }
