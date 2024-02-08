@@ -19,10 +19,4 @@ export class IncomesComponent {
   variable_incomes: Income[] = [];
     
   constructor(private incomesService: IncomesService){}
-
-  ngOnInit(){
-
-    this.fix_incomes = this.incomesService.getAllFixedIncomes();
-    this.variable_incomes = this.incomesService.getAllOVariableIncomes();
-  }
 }
